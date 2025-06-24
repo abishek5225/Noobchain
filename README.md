@@ -3,12 +3,9 @@
 functioning and ready for the production.It's a learning project only.
 To understand:-</h2>
 
-Blocks and Hashing
+->  Blocks and Hashing
 
-Proof of Work (Mining)
+->  Proof of Work (Mining)
 
-Chain Validation
-
-Transactions (optional)
-
-Not meant for production use – it's a learning project only.
+->  Chain Validation
+and may be many more.
