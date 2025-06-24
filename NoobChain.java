@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import com.google.gson.GsonBuilder;
+
 public class NoobChain {
     public static void main(String[] args) {
         Block firstBLock= new Block("Hello i'm the first block", "0");
