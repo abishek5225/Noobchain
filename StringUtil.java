@@ -12,6 +12,8 @@ public class StringUtil {
             if(hex.length()==1) hexString.append('0');
         }
 
-     }   
+     }catch(Exception e){
+
+     }
     }
 }
