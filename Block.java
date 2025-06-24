@@ -12,6 +12,7 @@ public class Block{
         this.data = data;
         this.previousHash = previousHash;
         this.timeStamp = new Date().getTime();
+        this.hash = calculatedHash();
     }
 
     public String calculatedHash(){
