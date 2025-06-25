@@ -10,4 +10,5 @@ To understand:-</h2>
 ->  Chain Validation
 and may be many more.
 
-<h2>A blockchain is just like a linked list connected with each others where each block contains the hash of previous block with it's own hash calculated from the previous hash.</h2>
+<h3>A blockchain is just like a linked list connected with each others where each block contains the hash of previous block with it's own hash calculated from the previous hash.
+If the previous block's data is changed then the previous block hash will be change.Changing any data in the list will change the hash of the block and will break the chain.</h3>
