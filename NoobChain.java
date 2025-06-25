@@ -2,8 +2,17 @@ import java.util.ArrayList;
 import com.google.gson.GsonBuilder;
 
 public class NoobChain {
+     public static ArrayList<Block> blockchain= new ArrayList<Block>();
 
-    public static ArrayList<Block> blockchain= new ArrayList<Block>();
+    public static Boolean isChainValid(){
+        Block currentBlock;
+        Block previousBlock;
+
+        return true;
+
+    }
+
+   
     public static void main(String[] args) {
         
         blockchain.add(new Block("Hi i am first block", "0"));
