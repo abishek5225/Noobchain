@@ -10,7 +10,7 @@ public class NoobChain {
         blockchain.add(new Block("I am second block",blockchain.get(blockchain.size()-1).hash));
         blockchain.add(new Block("I am third block", blockchain.get(blockchain.size()-1).hash));
 
-       String blockchainJson = new GsonBuilder().setPrettyPrinting().create().toJson(args);
+       String blockchainJson = new GsonBuilder().setPrettyPrinting().create().toJson(blockchain);
        System.out.println(blockchainJson);
     }
 }
