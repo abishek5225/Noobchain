@@ -11,7 +11,7 @@ public class NoobChain {
         Block previousBlock;
         String hashTarget= new String(new char[difficulty]).replace('\0', '0');
 
-        //loop to check hashes in the block chain
+        // it will loop through all blocks in the chain and compare the hashes
         for(int i=1; i<blockchain.size();i++){
             currentBlock=blockchain.get(i);
             previousBlock=blockchain.get(i-1);
