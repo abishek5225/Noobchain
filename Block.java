@@ -4,8 +4,9 @@ public class Block{
 
     public String hash;
     public String previousHash;
-    public String data;
-    public long timeStamp;
+    private String data;
+    private long timeStamp;
+    private int nonce;
 
     //block constructor
     public Block(String data, String previousHash){
