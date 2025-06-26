@@ -18,9 +18,17 @@ public class Block{
 
     public String calculatedHash(){
         String calculatedhash = StringUtil.applySha256(
-            previousHash + Long.toString(timeStamp)+ data
+            previousHash + Long.toString(timeStamp)+ Integer.toString(nonce)+ data
         );
         return calculatedhash;
+    }
+    public void mineBlock(int difficulty){
+        String target = new String(new char[difficulty]).replace('\0', '0');
+        while (!hash.substring(0,difficulty).equals(target)) {
+            nonce ++;
+            hash= calculatedHash();
+        }
+        System.out.println("Blocked MIned: "+hash);
     }
 
 
