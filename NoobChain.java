@@ -8,6 +8,12 @@ public class NoobChain {
         Block currentBlock;
         Block previousBlock;
 
+        //loop to check hashes in the block chain
+        for(int i=1; i<blockchain.size();i++){
+            currentBlock=blockchain.get(i);
+            previousBlock=blockchain.get(i-1);
+        }
+
         return true;
 
     }
