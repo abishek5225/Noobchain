@@ -12,6 +12,15 @@ public class NoobChain {
         for(int i=1; i<blockchain.size();i++){
             currentBlock=blockchain.get(i);
             previousBlock=blockchain.get(i-1);
+
+            if (!currentBlock.hash.equals(currentBlock.calculatedHash())) {
+                System.out.println("Current hashes is not equal");
+                return false;
+            }
+            if (!previousBlock.hash.equals(currentBlock.previousHash)) {
+                System.out.println("Previous hashes not equal");
+                return false;
+            }
         }
 
         return true;
